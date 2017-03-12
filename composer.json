@@ -1,10 +1,10 @@
 {
-    "name": "activelamp/swagger-ui-bundle",
+    "name": "oliver-ignitiondigital/swagger-ui-bundle",
     "description": "Creates a Swagger UI page in your Symfony2 application",
     "authors": [
         {
-            "name": "Bez Hermoso",
-            "email": "bez@activelamp.com"
+            "name": "Oliver Kastler",
+            "email": "oliver@ignitiondigital.co.nz"
         }
     ],
     "minimum-stability": "stable",
