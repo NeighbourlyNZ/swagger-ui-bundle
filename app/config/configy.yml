@@ -1,0 +1,5 @@
+assetic:
+    assets:
+      droid-sans-v6-latin-700-eot:
+        inputs: '%kernel.root_dir%/vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-700.eot'
+        output: '/fonts/droid-sans-v6-latin-700.eot'

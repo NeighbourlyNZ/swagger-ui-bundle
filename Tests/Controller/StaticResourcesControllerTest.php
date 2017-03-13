@@ -28,6 +28,7 @@ class StaticResourcesControllerTest extends WebTestCase
     {
         $this->client->request('GET', '/static-api-docs/');
         $response = $this->client->getResponse();
+
         $this->assertEquals(200, $response->getStatusCode());
         $this->assertEquals(
              json_decode(file_get_contents(__DIR__ . '/../Application/Resources/swagger-docs/api-docs.json')),

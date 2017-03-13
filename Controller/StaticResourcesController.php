@@ -40,15 +40,17 @@ class StaticResourcesController extends Controller
 
             $resourcesList = json_decode(array_pop($files)->getContents(), JSON_OBJECT_AS_ARRAY);
 
-            foreach ($resourcesList['tags'] as $tag) {
-                $finder = new Finder();
+            if (isset($resourcesList['tags'])) {
+                foreach ($resourcesList['tags'] as $tag) {
+                    $finder = new Finder();
 
-                $files = $finder->in($dir)->files()->name(sprintf('%s.json', strtolower($tag['name'])));
-                $files = iterator_to_array($files->getIterator());
+                    $files = $finder->in($dir)->files()->name(sprintf('%s.json', strtolower($tag['name'])));
+                    $files = iterator_to_array($files->getIterator());
 
-                $paths = json_decode(array_pop($files)->getContents(), JSON_OBJECT_AS_ARRAY);
+                    $paths = json_decode(array_pop($files)->getContents(), JSON_OBJECT_AS_ARRAY);
 
-                $resourcesList['paths'] = array_merge($resourcesList['paths'], $paths);
+                    $resourcesList['paths'] = array_merge($resourcesList['paths'], $paths);
+                }
             }
 
             $response = new Response(json_encode($resourcesList));
@@ -90,7 +92,7 @@ class StaticResourcesController extends Controller
 
     private function getStaticResourcesDir()
     {
-        return $this->get('kernel')->getRootDir() . '/../' . $this->get('service_container')->getParameter('al_swagger_ui.static_resources_dir');
+        return $this->get('service_container')->getParameter('al_swagger_ui.static_resources_dir');
     }
 
     private function getResourceListFilename()

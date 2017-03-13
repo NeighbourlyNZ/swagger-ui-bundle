@@ -4,6 +4,7 @@
 namespace ActiveLAMP\Bundle\SwaggerUIBundle\Tests\Application;
 
 use ActiveLAMP\Bundle\SwaggerUIBundle\ALSwaggerUIBundle;
+use Symfony\Bundle\AsseticBundle\AsseticBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -25,6 +26,7 @@ class AppKernel extends Kernel
             new FrameworkBundle(),
             new TwigBundle(),
             new ALSwaggerUIBundle(),
+            new AsseticBundle()
         );
 
         return $bundles;
