@@ -12,23 +12,9 @@
 {% endblock %}
 
 {% block al_swagger_ui_stylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-700.eot' output='fonts/droid-sans-v6-latin-700.eot' %}
+    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/DroidSans-Bold.ttf' output='fonts/DroidSans-Bold.ttf' %}
     {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-700.woff2' output='fonts/droid-sans-v6-latin-700.woff2' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-700.svg' output='fonts/droid-sans-v6-latin-700.svg' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-700.woff' output='fonts/droid-sans-v6-latin-700.woff' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-regular.eot' output='fonts/droid-sans-v6-latin-regular.eot' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-regular.svg' output='fonts/droid-sans-v6-latin-regular.svg' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-regular.ttf' output='fonts/droid-sans-v6-latin-regular.ttf' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-regular.woff' output='fonts/droid-sans-v6-latin-regular.woff' %}
-    {% endstylesheets %}
-    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/droid-sans-v6-latin-regular.woff2' output='fonts/droid-sans-v6-latin-regular.woff2' %}
+    {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/DroidSans.ttf' output='fonts/DroidSans.ttf' %}
     {% endstylesheets %}
     {% stylesheets
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/css/reset.css'
@@ -47,18 +33,18 @@
 {% endblock %}
 
 {% block al_swagger_ui_javascripts %}
-    {% javascripts '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/underscore-min.js' output='js/underscore-min.map' %}
-    {% endjavascripts %}
     {% javascripts
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jquery-1.8.0.min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jquery.slideto.min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jquery.wiggle.min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jquery.ba-bbq.min.js'
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/handlebars-2.0.0.js'
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/underscore-min.js'
+        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/handlebars-4.0.5.js'
+        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/lodash.min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/backbone-min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/swagger-ui.js'
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/highlight.7.3.pack.js'
+        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/highlight.9.1.0.pack.js'
+        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/highlight.9.1.0.pack_extended.js'
+        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jsoneditor.min.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/marked.js'
     %}
         <script src="{{ asset_url }}"></script>
