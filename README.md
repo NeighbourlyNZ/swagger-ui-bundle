@@ -1,3 +1,9 @@
+@TODO
+=====
+
+add swagger-ui as dependency.
+
+
 Swagger UI Bundle
 =================
 
@@ -6,8 +12,6 @@ Creates a [swagger-ui](https://github.com/wordnik/swagger-ui) page (something li
 * [x] Basic functionalities
 * [x] Configurable authentication methods
 * [x] Unit tests
-
-#### For Swagger v1.x support, use the `v0.2.1` of this repository. `dev-master` is now using Swagger v2.
 
 # Documentation
 

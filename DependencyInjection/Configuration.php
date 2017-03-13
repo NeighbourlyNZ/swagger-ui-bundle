@@ -48,6 +48,7 @@ class Configuration implements ConfigurationInterface
                                 ->prototype('scalar')->end()
                                 ->defaultValue(array('true', 'false'))
                             ->end()
+                            ->scalarNode('validatorUrl')->defaultValue('https://online.swagger.io/validator')->end()
                         ->end()
                     ->end()
                     ->arrayNode('auth_config')
