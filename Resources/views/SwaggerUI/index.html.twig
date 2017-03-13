@@ -35,6 +35,7 @@
           url: {{ resource_list_url|json_encode|raw }},
           dom_id: "swagger-ui-container",
           supportedSubmitMethods: {{ js_config.supported_submit_methods|json_encode|raw }},
+          validatorUrl: {{ js_config.validatorUrl|json_encode|raw }},
           onComplete: function(swaggerApi, swaggerUi){
             console.log('Loaded SwaggerUI');
 

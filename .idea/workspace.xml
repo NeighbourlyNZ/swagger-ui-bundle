@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da255558-975c-4038-98ca-6ed3e95eafc4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/DependencyInjection/Configuration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig" afterPath="$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,6 +24,46 @@
             <state relative-caret-position="84">
               <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="84">
+                <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <folding>
+                  <marker date="1489368040853" expanded="true" signature="816:1520" ph="al_swagger_ui: &lt;4 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="874:973" ph="static_resources: &lt;2 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="922:926" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="960:973" ph="api-docs.json" />
+                  <marker date="1489368040853" expanded="true" signature="978:1199" ph="js_config: &lt;5 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="1019:1023" ph="list" />
+                  <marker date="1489368040853" expanded="true" signature="1032:1082" ph="supported…it_methods: [4 items]" />
+                  <marker date="1489368040853" expanded="true" signature="1059:1062" ph="get" />
+                  <marker date="1489368040853" expanded="true" signature="1064:1068" ph="post" />
+                  <marker date="1489368040853" expanded="true" signature="1070:1073" ph="put" />
+                  <marker date="1489368040853" expanded="true" signature="1075:1081" ph="delete" />
+                  <marker date="1489368040853" expanded="true" signature="1113:1117" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1153:1157" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1166:1199" ph="boolean_values: [2 items]" />
+                  <marker date="1489368040853" expanded="true" signature="1183:1189" ph="true" />
+                  <marker date="1489368040853" expanded="true" signature="1191:1198" ph="false" />
+                  <marker date="1489368040853" expanded="true" signature="1204:1520" ph="auth_config: &lt;2 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="1225:1388" ph="oauth: &lt;4 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="1266:1271" ph="false" />
+                  <marker date="1489368040853" expanded="true" signature="1306:1310" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1345:1349" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1384:1388" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1397:1520" ph="http: &lt;3 keys&gt;" />
+                  <marker date="1489368040853" expanded="true" signature="1437:1442" ph="false" />
+                  <marker date="1489368040853" expanded="true" signature="1477:1481" ph="null" />
+                  <marker date="1489368040853" expanded="true" signature="1516:1520" ph="null" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -69,17 +108,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="71" />
+            <state relative-caret-position="518">
+              <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DependencyInjection/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -115,8 +154,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/DependencyInjection/Configuration.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig" />
       </list>
     </option>
   </component>
@@ -290,52 +330,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="56">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-            <folding>
-              <marker date="1489357690885" expanded="true" signature="746:1450" ph="al_swagger_ui: &lt;4 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="804:903" ph="static_resources: &lt;2 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="852:856" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="890:903" ph="api-docs.json" />
-              <marker date="1489357690885" expanded="true" signature="908:1129" ph="js_config: &lt;5 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="949:953" ph="list" />
-              <marker date="1489357690885" expanded="true" signature="962:1012" ph="supported…it_methods: [4 items]" />
-              <marker date="1489357690885" expanded="true" signature="989:992" ph="get" />
-              <marker date="1489357690885" expanded="true" signature="994:998" ph="post" />
-              <marker date="1489357690885" expanded="true" signature="1000:1003" ph="put" />
-              <marker date="1489357690885" expanded="true" signature="1005:1011" ph="delete" />
-              <marker date="1489357690885" expanded="true" signature="1043:1047" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1083:1087" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1096:1129" ph="boolean_values: [2 items]" />
-              <marker date="1489357690885" expanded="true" signature="1113:1119" ph="true" />
-              <marker date="1489357690885" expanded="true" signature="1121:1128" ph="false" />
-              <marker date="1489357690885" expanded="true" signature="1134:1450" ph="auth_config: &lt;2 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="1155:1318" ph="oauth: &lt;4 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="1196:1201" ph="false" />
-              <marker date="1489357690885" expanded="true" signature="1236:1240" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1275:1279" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1314:1318" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1327:1450" ph="http: &lt;3 keys&gt;" />
-              <marker date="1489357690885" expanded="true" signature="1367:1372" ph="false" />
-              <marker date="1489357690885" expanded="true" signature="1407:1411" ph="null" />
-              <marker date="1489357690885" expanded="true" signature="1446:1450" ph="null" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/SwaggerUIController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -417,14 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/config/static_resources_routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -449,10 +435,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="84">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding>
+              <marker date="1489368040853" expanded="true" signature="816:1520" ph="al_swagger_ui: &lt;4 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="874:973" ph="static_resources: &lt;2 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="922:926" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="960:973" ph="api-docs.json" />
+              <marker date="1489368040853" expanded="true" signature="978:1199" ph="js_config: &lt;5 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="1019:1023" ph="list" />
+              <marker date="1489368040853" expanded="true" signature="1032:1082" ph="supported…it_methods: [4 items]" />
+              <marker date="1489368040853" expanded="true" signature="1059:1062" ph="get" />
+              <marker date="1489368040853" expanded="true" signature="1064:1068" ph="post" />
+              <marker date="1489368040853" expanded="true" signature="1070:1073" ph="put" />
+              <marker date="1489368040853" expanded="true" signature="1075:1081" ph="delete" />
+              <marker date="1489368040853" expanded="true" signature="1113:1117" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1153:1157" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1166:1199" ph="boolean_values: [2 items]" />
+              <marker date="1489368040853" expanded="true" signature="1183:1189" ph="true" />
+              <marker date="1489368040853" expanded="true" signature="1191:1198" ph="false" />
+              <marker date="1489368040853" expanded="true" signature="1204:1520" ph="auth_config: &lt;2 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="1225:1388" ph="oauth: &lt;4 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="1266:1271" ph="false" />
+              <marker date="1489368040853" expanded="true" signature="1306:1310" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1345:1349" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1384:1388" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1397:1520" ph="http: &lt;3 keys&gt;" />
+              <marker date="1489368040853" expanded="true" signature="1437:1442" ph="false" />
+              <marker date="1489368040853" expanded="true" signature="1477:1481" ph="null" />
+              <marker date="1489368040853" expanded="true" signature="1516:1520" ph="null" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DependencyInjection/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="50" column="116" lean-forward="false" selection-start-line="50" selection-start-column="116" selection-end-line="50" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/views/SwaggerUI/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
           <folding />
         </state>
       </provider>

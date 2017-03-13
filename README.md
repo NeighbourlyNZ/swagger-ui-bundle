@@ -1,7 +1,9 @@
 @TODO
 =====
 
-add swagger-ui as dependency.
+- add swagger-ui as dependency.
+- support all config options (dynamically)
+- update readme / config
 
 
 Swagger UI Bundle
