@@ -1,5 +1,5 @@
 {
-    "name": "ignitiondigital/swagger-ui-bundle",
+    "name": "ideahq/swagger-ui-bundle",
     "description": "Creates a Swagger UI page in your Symfony2 application",
     "authors": [
         {
@@ -8,7 +8,7 @@
         },
         {
             "name": "Oliver Kastler",
-            "email": "oliver@ignitiondigital.co.nz"
+            "email": "oliver@ideahq.co.nz"
         }
     ],
     "minimum-stability": "stable",
