@@ -1,7 +1,6 @@
 @TODO
 =====
 
-- add swagger-ui as dependency.
 - support all config options (dynamically) - https://github.com/swagger-api/swagger-ui#parameters
 - update readme / config
 
