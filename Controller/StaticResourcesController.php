@@ -6,7 +6,7 @@
  * Time: 10:02 AM
  */
 
-namespace ActiveLAMP\Bundle\SwaggerUIBundle\Controller;
+namespace IdeaHQ\Bundle\SwaggerUIBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Filesystem\Filesystem;
@@ -92,11 +92,11 @@ class StaticResourcesController extends Controller
 
     private function getStaticResourcesDir()
     {
-        return $this->get('service_container')->getParameter('al_swagger_ui.static_resources_dir');
+        return $this->get('service_container')->getParameter('ideahq_swagger_ui.static_resources_dir');
     }
 
     private function getResourceListFilename()
     {
-        return $this->get('service_container')->getParameter('al_swagger_ui.static_resource_list_filename');
+        return $this->get('service_container')->getParameter('ideahq_swagger_ui.static_resource_list_filename');
     }
 }

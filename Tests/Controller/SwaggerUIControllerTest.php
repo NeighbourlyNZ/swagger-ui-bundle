@@ -1,9 +1,9 @@
 <?php
 
 
-namespace ActiveLAMP\Bundle\SwaggerUIBundle\Tests\Controller;
+namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests\Controller;
 
-use ActiveLAMP\Bundle\SwaggerUIBundle\Tests\WebTestCase;
+use IdeaHQ\Bundle\SwaggerUIBundle\Tests\WebTestCase;
 
 class SwaggerUIControllerTest extends WebTestCase
 {
@@ -43,7 +43,7 @@ class SwaggerUIControllerTest extends WebTestCase
         $this->assertRegExp('/realm:\s?"foobar"/', $content);
         $this->assertRegExp('/initOAuth\({/', $content);
         $this->assertRegExp('/clientId:\s?8324737/', $content);
-        $this->assertRegExp('/appName:\s?"ActiveLAMP Swagger UI"/', $content);
+        $this->assertRegExp('/appName:\s?"IdeaHQ Swagger UI"/', $content);
         //$this->assertRegExp('/src="(.*)swagger-oauth.js"/', $content);
         $this->assertNotRegExp(
              '/window\.authorizations\.add\("key"/',

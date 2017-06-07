@@ -1,7 +1,7 @@
-al_swagger_ui:
-    resource: "@ALSwaggerUIBundle/Resources/config/routing.yml"
+ideahq_swagger_ui:
+    resource: "@IdeaHQSwaggerUIBundle/Resources/config/routing.yml"
     prefix: /documentation
 
-al_swagger_ui_static_resources:
-    resource: "@ALSwaggerUIBundle/Resources/config/static_resources_routing.yml"
+ideahq_swagger_ui_static_resources:
+    resource: "@IdeaHQSwaggerUIBundle/Resources/config/static_resources_routing.yml"
     prefix: /static-api-docs

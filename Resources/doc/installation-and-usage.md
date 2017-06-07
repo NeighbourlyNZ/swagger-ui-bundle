@@ -5,7 +5,7 @@ Swagger UI Bundle
 
 Install via Composer:
 
-`$ composer require activelamp/swagger-ui-bundle:0.2.*`
+`$ composer require ideahq/swagger-ui-bundle:0.2.*`
 
 Enable in `app/AppKernel.php`:
 
@@ -21,7 +21,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             ...
-            new ActiveLAMP\Bundle\SwaggerUIBundle\ALSwaggerUIBundle(),
+            new IdeaHQ\Bundle\SwaggerUIBundle\IdeaHQSwaggerUIBundle(),
 
 ```
 Let it know where to find your API's resource-list JSON:
@@ -29,22 +29,22 @@ Let it know where to find your API's resource-list JSON:
 ```
 # app/config/config.yml
 
-al_swagger_ui:
+ideahq_swagger_ui:
     resource_list: http://petstore.swagger.wordnik.com/api/api-docs
 ```
 
 And finally, add the route to `app/config/routing.yml`:
 
 ```
-al_swagger_ui:
-    resource: @ALSwaggerUIBundle/Resources/config/routing.yml
+ideahq_swagger_ui:
+    resource: @IdeaHQSwaggerUIBundle/Resources/config/routing.yml
     prefix: /docs
 ```
 
 The swagger-ui page for your REST API should now be served at 
 `http://yourapp.com/docs`.
 
-### `al_swagger_ui -> resource_list` configuration
+### `ideahq_swagger_ui -> resource_list` configuration
 
 The `resource_list` option can receive 2 types of values:
 
@@ -60,20 +60,20 @@ If you already have a set of Swagger-compliant JSON files, you can configure thi
 
 ```yaml
  # app/config/routing.yml
-al_swagger_ui_static_resources:
-    resource: @ALSwaggerUI/Resources/config/static_resources_routing.yml
+ideahq_swagger_ui_static_resources:
+    resource: @IdeaHQSwaggerUI/Resources/config/static_resources_routing.yml
     prefix: /swagger-docs
 ```
 3. Configure the `static_resources` config:
 
 ```yaml
-al_swagger_ui:
+ideahq_swagger_ui:
     static_resources:
         resource_dir: app/Resources/swagger-docs
         resource_list_filename:  api-docs.json
-    resource_list: al_swagger_ui_static_resource_list
+    resource_list: ideahq_swagger_ui_static_resource_list
 ```
 
 This will result in a `/swagger-docs` route to return the resource-list, and `/swagger-docs/<resource_name>` to serve API declarations.
 
-Setting `resource_list` to `al_swagger_ui_static_resource_list` will then point `swagger-ui` to the right direction.
+Setting `resource_list` to `ideahq_swagger_ui_static_resource_list` will then point `swagger-ui` to the right direction.

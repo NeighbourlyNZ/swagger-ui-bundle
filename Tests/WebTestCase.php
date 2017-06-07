@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ActiveLAMP\Bundle\SwaggerUIBundle\Tests;
+namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase as BaseCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -38,7 +38,7 @@ class WebTestCase extends BaseCase
 
     private function cleanup()
     {
-        $dir = sys_get_temp_dir() . '/al_swagger_ui/' . Kernel::VERSION;
+        $dir = sys_get_temp_dir() . '/ideahq_swagger_ui/' . Kernel::VERSION;
         if (file_exists($dir)) {
             $fs = new Filesystem();
             $fs->remove($dir);

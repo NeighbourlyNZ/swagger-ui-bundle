@@ -1,3 +1,3 @@
-al_swagger_ui_home:
+ideahq_swagger_ui_home:
     path:     /
-    defaults: { _controller: ALSwaggerUIBundle:SwaggerUI:index }
+    defaults: { _controller: IdeaHQSwaggerUIBundle:SwaggerUI:index }

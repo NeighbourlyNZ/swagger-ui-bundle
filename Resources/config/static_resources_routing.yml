@@ -1,9 +1,9 @@
-al_swagger_ui_static_resource_list:
+ideahq_swagger_ui_static_resource_list:
     path: /
     defaults:
-        _controller: ALSwaggerUIBundle:StaticResources:resourceList
+        _controller: IdeaHQSwaggerUIBundle:StaticResources:resourceList
 
-al_swagger_ui_static_api_declaration:
+ideahq_swagger_ui_static_api_declaration:
     path: /{resource}
     defaults:
-        _controller: ALSwaggerUIBundle:StaticResources:apiDeclaration
+        _controller: IdeaHQSwaggerUIBundle:StaticResources:apiDeclaration

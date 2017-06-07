@@ -8,7 +8,7 @@ Swagger UI Bundle
 
 ### OAuth
 ```
-  al_swagger_ui:
+  ideahq_swagger_ui:
       oauth:
           enable: true
           app_name: "Your app name"
@@ -20,7 +20,7 @@ Coupled with the correct OAuth authentication definition in the Swagger API decl
 
 ### HTTP
 ```
-  al_swagger_ui:
+  ideahq_swagger_ui:
       http:
           enable: true
           key_name: __key

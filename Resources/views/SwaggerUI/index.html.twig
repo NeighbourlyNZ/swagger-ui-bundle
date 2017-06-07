@@ -1,6 +1,6 @@
-{% extends "ALSwaggerUIBundle::layout.html.twig" %}
+{% extends "IdeaHQSwaggerUIBundle::layout.html.twig" %}
 
-{% block al_swagger_ui_favicons %}
+{% block ideahq_swagger_ui_favicons %}
     {% image '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/images/logo_small.png' output='images/logo_small.png' %}
     {% endimage %}
     {% image '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/images/favicon-32x32.png' %}
@@ -13,7 +13,7 @@
     {% endimage %}
 {% endblock %}
 
-{% block al_swagger_ui_stylesheets %}
+{% block ideahq_swagger_ui_stylesheets %}
     {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/DroidSans-Bold.ttf' output='fonts/DroidSans-Bold.ttf' %}
     {% endstylesheets %}
     {% stylesheets '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/fonts/DroidSans.ttf' output='fonts/DroidSans.ttf' %}
@@ -34,7 +34,7 @@
 
 {% endblock %}
 
-{% block al_swagger_ui_javascripts %}
+{% block ideahq_swagger_ui_javascripts %}
     {% javascripts
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/object-assign-pollyfill.js'
         '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/lib/jquery-1.8.0.min.js'
@@ -118,7 +118,7 @@
     </script>
 {% endblock %}
 
-{% block al_swagger_ui_auth_form %}
+{% block ideahq_swagger_ui_auth_form %}
     {% if false %}
         <form id='api_selector'>
             <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
@@ -128,7 +128,7 @@
     {% endif %}
 {% endblock %}
 
-{% block al_swagger_ui_content %}
+{% block ideahq_swagger_ui_content %}
     <div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
     <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
 {% endblock %}

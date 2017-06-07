@@ -12,8 +12,8 @@ framework:
     secret: fizzbuzz
     test: ~
 
-al_swagger_ui:
-    resource_list: al_swagger_ui_static_resource_list
+ideahq_swagger_ui:
+    resource_list: ideahq_swagger_ui_static_resource_list
     static_resources:
         resource_dir: "%kernel.root_dir%/Resources/swagger-docs"
     js_config:
@@ -25,5 +25,5 @@ al_swagger_ui:
         oauth:
             enable: true
             realm: foobar
-            app_name: "ActiveLAMP Swagger UI"
+            app_name: "IdeaHQ Swagger UI"
             client_id: 8324737

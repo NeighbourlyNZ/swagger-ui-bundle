@@ -1,9 +1,9 @@
 <?php
 
 
-namespace ActiveLAMP\Bundle\SwaggerUIBundle\Tests\Application;
+namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests\Application;
 
-use ActiveLAMP\Bundle\SwaggerUIBundle\ALSwaggerUIBundle;
+use IdeaHQ\Bundle\SwaggerUIBundle\IdeaHQSwaggerUIBundle;
 use Symfony\Bundle\AsseticBundle\AsseticBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\TwigBundle\TwigBundle;
@@ -25,7 +25,7 @@ class AppKernel extends Kernel
         $bundles = array(
             new FrameworkBundle(),
             new TwigBundle(),
-            new ALSwaggerUIBundle(),
+            new IdeaHQSwaggerUIBundle(),
             new AsseticBundle()
         );
 
@@ -46,11 +46,11 @@ class AppKernel extends Kernel
 
     public function getCacheDir()
     {
-        return sys_get_temp_dir() . '/al_swagger_ui/' . Kernel::VERSION . '/cache/' . $this->environment;
+        return sys_get_temp_dir() . '/ideahq_swagger_ui/' . Kernel::VERSION . '/cache/' . $this->environment;
     }
 
     public function getLogDir()
     {
-        return sys_get_temp_dir() . '/al_swagger_ui/' . Kernel::VERSION . '/logs';
+        return sys_get_temp_dir() . '/ideahq_swagger_ui/' . Kernel::VERSION . '/logs';
     }
 }
