@@ -21,7 +21,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             ...
-            new IdeaHQ\Bundle\SwaggerUIBundle\IdeaHQSwaggerUIBundle(),
+            new Ideahq\Bundle\SwaggerUIBundle\IdeahqSwaggerUIBundle(),
 
 ```
 Let it know where to find your API's resource-list JSON:
@@ -37,7 +37,7 @@ And finally, add the route to `app/config/routing.yml`:
 
 ```
 ideahq_swagger_ui:
-    resource: @IdeaHQSwaggerUIBundle/Resources/config/routing.yml
+    resource: @IdeahqSwaggerUIBundle/Resources/config/routing.yml
     prefix: /docs
 ```
 
@@ -61,7 +61,7 @@ If you already have a set of Swagger-compliant JSON files, you can configure thi
 ```yaml
  # app/config/routing.yml
 ideahq_swagger_ui_static_resources:
-    resource: @IdeaHQSwaggerUI/Resources/config/static_resources_routing.yml
+    resource: @IdeahqSwaggerUI/Resources/config/static_resources_routing.yml
     prefix: /swagger-docs
 ```
 3. Configure the `static_resources` config:

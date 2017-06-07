@@ -1,9 +1,9 @@
 ideahq_swagger_ui_static_resource_list:
     path: /
     defaults:
-        _controller: IdeaHQSwaggerUIBundle:StaticResources:resourceList
+        _controller: IdeahqSwaggerUIBundle:StaticResources:resourceList
 
 ideahq_swagger_ui_static_api_declaration:
     path: /{resource}
     defaults:
-        _controller: IdeaHQSwaggerUIBundle:StaticResources:apiDeclaration
+        _controller: IdeahqSwaggerUIBundle:StaticResources:apiDeclaration

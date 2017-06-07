@@ -1,6 +1,6 @@
 <?php
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\DependencyInjection;
+namespace Ideahq\Bundle\SwaggerUIBundle\DependencyInjection;
 
 use Symfony\Component\Config\Resource\FileResource;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class IdeaHQSwaggerUIExtension extends Extension
+class IdeahqSwaggerUIExtension extends Extension
 {
     /**
      * {@inheritDoc}

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests\Application;
+namespace Ideahq\Bundle\SwaggerUIBundle\Tests\Application;
 
-use IdeaHQ\Bundle\SwaggerUIBundle\IdeaHQSwaggerUIBundle;
+use Ideahq\Bundle\SwaggerUIBundle\IdeahqSwaggerUIBundle;
 use Symfony\Bundle\AsseticBundle\AsseticBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\TwigBundle\TwigBundle;
@@ -25,7 +25,7 @@ class AppKernel extends Kernel
         $bundles = array(
             new FrameworkBundle(),
             new TwigBundle(),
-            new IdeaHQSwaggerUIBundle(),
+            new IdeahqSwaggerUIBundle(),
             new AsseticBundle()
         );
 

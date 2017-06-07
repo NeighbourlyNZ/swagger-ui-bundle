@@ -1,6 +1,6 @@
 <?php
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\Controller;
+namespace Ideahq\Bundle\SwaggerUIBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -29,7 +29,7 @@ class SwaggerUIController extends Controller
 
         $url = rtrim($url, '/');
 
-        return $this->render('IdeaHQSwaggerUIBundle:SwaggerUI:index.html.twig', array(
+        return $this->render('IdeahqSwaggerUIBundle:SwaggerUI:index.html.twig', array(
             'resource_list_url' => $url,
             'js_config' => $jsConfig,
             'auth_config' => $authConfig

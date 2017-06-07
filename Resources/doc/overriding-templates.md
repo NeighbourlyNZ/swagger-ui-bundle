@@ -1,7 +1,7 @@
 Swagger UI Bundle
 =================
 
-You can override the template used through the usual way, which is creating an `app/Resources/IdeaHQSwaggerUIBundle/views/layout.html.twig` file.
+You can override the template used through the usual way, which is creating an `app/Resources/IdeahqSwaggerUIBundle/views/layout.html.twig` file.
 
 Here are the various Twig blocks that you need to know about:
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests;
+namespace Ideahq\Bundle\SwaggerUIBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase as BaseCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;

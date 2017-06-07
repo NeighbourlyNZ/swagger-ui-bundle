@@ -1,9 +1,9 @@
 <?php
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle;
+namespace Ideahq\Bundle\SwaggerUIBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class IdeaHQSwaggerUIBundle extends Bundle
+class IdeahqSwaggerUIBundle extends Bundle
 {
 }

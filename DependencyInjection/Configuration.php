@@ -1,6 +1,6 @@
 <?php
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\DependencyInjection;
+namespace Ideahq\Bundle\SwaggerUIBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

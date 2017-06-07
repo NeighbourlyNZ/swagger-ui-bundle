@@ -1,9 +1,9 @@
 <?php
 
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\Tests\Controller;
+namespace Ideahq\Bundle\SwaggerUIBundle\Tests\Controller;
 
-use IdeaHQ\Bundle\SwaggerUIBundle\Tests\WebTestCase;
+use Ideahq\Bundle\SwaggerUIBundle\Tests\WebTestCase;
 use Symfony\Bundle\FrameworkBundle\Client;
 
 /**

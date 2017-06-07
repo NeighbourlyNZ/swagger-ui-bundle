@@ -1,5 +1,5 @@
 parameters:
-#    ideahq_swagger_ui.example.class: IdeaHQ\Bundle\SwaggerUIBundle\Example
+#    ideahq_swagger_ui.example.class: Ideahq\Bundle\SwaggerUIBundle\Example
 
 services:
 #    ideahq_swagger_ui.example:

@@ -6,7 +6,7 @@
  * Time: 10:02 AM
  */
 
-namespace IdeaHQ\Bundle\SwaggerUIBundle\Controller;
+namespace Ideahq\Bundle\SwaggerUIBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Filesystem\Filesystem;

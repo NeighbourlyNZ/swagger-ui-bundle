@@ -25,5 +25,5 @@ ideahq_swagger_ui:
         oauth:
             enable: true
             realm: foobar
-            app_name: "IdeaHQ Swagger UI"
+            app_name: "Ideahq Swagger UI"
             client_id: 8324737
