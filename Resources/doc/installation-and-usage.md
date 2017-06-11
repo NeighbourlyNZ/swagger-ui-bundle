@@ -30,7 +30,7 @@ Let it know where to find your API's resource-list JSON:
 # app/config/config.yml
 
 ideahq_swagger_ui:
-    resource_list: http://petstore.swagger.wordnik.com/api/api-docs
+    url: http://petstore.swagger.wordnik.com/api/api-docs
 ```
 
 And finally, add the route to `app/config/routing.yml`:

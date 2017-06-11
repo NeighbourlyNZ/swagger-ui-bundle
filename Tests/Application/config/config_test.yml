@@ -13,17 +13,7 @@ framework:
     test: ~
 
 ideahq_swagger_ui:
-    resource_list: ideahq_swagger_ui_static_resource_list
+    url: ideahq_swagger_ui_static_resource_list
     static_resources:
         resource_dir: "%kernel.root_dir%/Resources/swagger-docs"
-    js_config:
-        expansion: full
-        sorter: alpha
-        highlight_size_threshold: 100
-        boolean_values: [0, 1]
-    auth_config:
-        oauth:
-            enable: true
-            realm: foobar
-            app_name: "Ideahq Swagger UI"
-            client_id: 8324737
+    operations_sorter: alpha

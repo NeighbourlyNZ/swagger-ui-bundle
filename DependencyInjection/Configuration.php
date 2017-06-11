@@ -27,9 +27,15 @@ class Configuration implements ConfigurationInterface
         $rootNode->addDefaultsIfNotSet()
                  ->children()
                     ->scalarNode('url')->end()
-                    ->scalarNode('sorter')->defaultValue(null)->end()
                     ->scalarNode('validator_url')->defaultValue('https://online.swagger.io/validator')->end()
                     ->scalarNode('operations_sorter')->defaultValue('alpha')->end()
+                    ->arrayNode('static_resources')
+                        ->addDefaultsIfNotSet()
+                        ->children()
+                            ->scalarNode('resource_dir')->defaultValue(null)->end()
+                            ->scalarNode('resource_list_filename')->defaultValue('api-docs.json')->end()
+                        ->end()
+                    ->end()
                  ->end();
 
         return $treeBuilder;

@@ -26,13 +26,11 @@ class IdeahqSwaggerUIExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('ideahq_swagger_ui.resource_list', $config['resource_list']);
-        $container->setParameter('ideahq_swagger_ui.js_config', $config['js_config']);
-        $container->setParameter('ideahq_swagger_ui.auth_config', $config['auth_config']);
+        $container->setParameter('ideahq_swagger_ui.url', $config['url']);
+        $container->setParameter('ideahq_swagger_ui.validator_url', $config['validator_url']);
+        $container->setParameter('ideahq_swagger_ui.operations_sorter', $config['operations_sorter']);
 
         $container->setParameter('ideahq_swagger_ui.static_resources_dir', $config['static_resources']['resource_dir']);
         $container->setParameter('ideahq_swagger_ui.static_resource_list_filename', $config['static_resources']['resource_list_filename']);
-        $container->setParameter('ideahq_swagger_ui.authentication_config', $config['auth_config']);
-
     }
 }

@@ -13,6 +13,7 @@ class SwaggerUIControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/documentation/');
 
         $response = $client->getResponse();
+        //var_dump($response->getContent());
         $this->assertEquals(200, $response->getStatusCode());
 
         $this->assertCount(1, $crawler->filter('#message-bar'));
@@ -23,31 +24,7 @@ class SwaggerUIControllerTest extends WebTestCase
         $this->assertRegExp('/dom_id:\s?"swagger-ui-container"/', $content);
         $this->assertRegExp('/docExpansion:\s?"full"/', $content);
         $this->assertRegExp('!validatorUrl:\s?"https:\\\/\\\/online.swagger.io\\\/validator"!', $content);
-        //$this->assertRegExp('/sorter:\s?"alpha"/', $content);
-        //$this->assertRegExp('/booleanValues:\s?[0,\s?1]/', $content);
-        //$this->assertRegExp('/highlightSizeThreshold:\s?100/', $content);
-    }
-
-    public function testOauth()
-    {
-        $client = static::createClient();
-        $crawler = $client->request('GET', '/documentation/');
-
-        $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode());
-
-        $this->assertCount(1, $crawler->filter('#message-bar'));
-        $this->assertCount(1, $crawler->filter('#swagger-ui-container'));
-
-        $content = $response->getContent();
-        $this->assertRegExp('/realm:\s?"foobar"/', $content);
-        $this->assertRegExp('/initOAuth\({/', $content);
-        $this->assertRegExp('/clientId:\s?8324737/', $content);
-        $this->assertRegExp('/appName:\s?"Ideahq Swagger UI"/', $content);
-        $this->assertNotRegExp(
-             '/window\.authorizations\.add\("key"/',
-                 $content
-        );
+        $this->assertRegExp('/operations_sorter:\s?"alpha"/', $content);
     }
 
     public function testExternalUrl()
@@ -61,19 +38,4 @@ class SwaggerUIControllerTest extends WebTestCase
         $content = $response->getContent();
         $this->assertRegExp('#url:\s?"http:\\\/\\\/petstore.swagger.wordnik.com\\\/api\\\/api-docs"#', $content);
     }
-
-    public function testHttpAuth()
-    {
-        $client = static::createClient(array('environment' => 'external'));
-        $client->request('GET', '/documentation/');
-
-        $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode());
-
-        $content = $response->getContent();
-        //$this->assertRegExp(
-        //     '/window\.authorizations\.add\("key", new ApiKeyAuthorization\("api_key", key, "header"\)\);/',
-        //     $content
-        //);
-    }
-} 
+}

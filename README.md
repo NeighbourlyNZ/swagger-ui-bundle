@@ -24,24 +24,8 @@ Creates a [swagger-ui](https://github.com/wordnik/swagger-ui) page (something li
 
 ```yaml
 ideahq_swagger_ui:
-    resource_list:        ~ # Required
+    url:        ~ # Required
     static_resources:
         resource_dir:         null
         resource_list_filename:  api-docs.json
-    js_config:
-        expansion:            list
-        supported_submit_methods: [get, post, put, delete]
-        sorter:               null
-        highlight_size_threshold:  null
-        boolean_values: ['true', 'false']
-    auth_config:
-        oauth:
-            enable:               false
-            client_id:            null
-            realm:                null
-            app_name:             null
-        http:
-            enable:               false
-            key_name:             null
-            delivery:             null
-```
+    operations_sorter:               null

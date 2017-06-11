@@ -12,8 +12,8 @@ class SwaggerUIController extends Controller
 {
     public function indexAction(Request $request)
     {
-        $docUrl = $this->get('service_container')->getParameter('ideahq_swagger_ui.resource_list');
-        $validationUrl = $this->get('service_container')->getParameter('ideahq_swagger_ui.validation_url');
+        $docUrl = $this->get('service_container')->getParameter('ideahq_swagger_ui.url');
+        $validatorUrl = $this->get('service_container')->getParameter('ideahq_swagger_ui.validator_url');
 
         if (preg_match('/^(https?:)?\/\//', $docUrl)) {
             // If https://..., http://..., or //...
@@ -30,7 +30,7 @@ class SwaggerUIController extends Controller
 
         return $this->render('IdeahqSwaggerUIBundle:SwaggerUI:index.html.twig', array(
             'resource_list_url' => $url,
-            'validation_url' => $validationUrl
+            'validator_url' => $validatorUrl
         ));
     }
 }
