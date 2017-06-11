@@ -44,7 +44,6 @@ class SwaggerUIControllerTest extends WebTestCase
         $this->assertRegExp('/initOAuth\({/', $content);
         $this->assertRegExp('/clientId:\s?8324737/', $content);
         $this->assertRegExp('/appName:\s?"Ideahq Swagger UI"/', $content);
-        //$this->assertRegExp('/src="(.*)swagger-oauth.js"/', $content);
         $this->assertNotRegExp(
              '/window\.authorizations\.add\("key"/',
                  $content
@@ -76,6 +75,5 @@ class SwaggerUIControllerTest extends WebTestCase
         //     '/window\.authorizations\.add\("key", new ApiKeyAuthorization\("api_key", key, "header"\)\);/',
         //     $content
         //);
-        $this->assertNotRegExp('/src="(.*)swagger-oauth.js"/', $content);
     }
 } 

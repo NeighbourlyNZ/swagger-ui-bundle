@@ -29,7 +29,9 @@
     window.onload = function() {
       // Build a system
       const ui = SwaggerUIBundle({
-        url: {{ resource_list_url|json_encode|raw }},
+        url: {{ url|json_encode|raw }},
+        validatorUrl: {{ validator_url|json_encode|raw }},
+        operationsSorter: {{ operations_sorter }},
         dom_id: '#swagger-ui',
         presets: [
           SwaggerUIBundle.presets.apis,
