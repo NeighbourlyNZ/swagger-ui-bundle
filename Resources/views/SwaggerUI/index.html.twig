@@ -1,44 +1,39 @@
 {% extends "IdeahqSwaggerUIBundle::layout.html.twig" %}
 
 {% block ideahq_swagger_ui_favicons %}
-    {% image '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/favicon-32x32.png' %}
-        <link rel="icon" type="image/png" href="{{ asset_url }}" sizes='32x32' />
-    {% endimage %}
-    {% image '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/favicon-16x16.png' %}
-        <link rel="icon" type="image/png" href="{{ asset_url }}" sizes='16x16' />
-    {% endimage %}
+
+    <link rel="icon" type="image/png" href="{{ webpack_asset('@root/vendor/swagger-api/swagger-ui/dist/favicon-32x32.png') }}" sizes='32x32' />
+    <link rel="icon" type="image/png" href="{{ webpack_asset('@root/vendor/swagger-api/swagger-ui/dist/favicon-16x16.png') }}" sizes='16x16' />
 {% endblock %}
 
 {% block ideahq_swagger_ui_stylesheets %}
-    {% stylesheets
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/swagger-ui.css'
-    %}
-        <link href="{{ asset_url }}" rel='stylesheet' type='text/css'/>
-    {% endstylesheets %}
+    <link href="{{ webpack_asset('@root/vendor/swagger-api/swagger-ui/dist/swagger-ui.css') }}" rel='stylesheet' type='text/css'/>
 {% endblock %}
 
 {% block ideahq_swagger_ui_javascripts %}
-    {% javascripts
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/swagger-ui-bundle.js'
-        '%kernel.root_dir%/../vendor/swagger-api/swagger-ui/dist/swagger-ui-standalone-preset.js'
+    {% webpack named js 'node-static' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% end_webpack %}
+    {% webpack js
+        '@IdeahqSwaggerUIBundle/Resources/views/SwaggerUI/index.js'
     %}
-        <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% end_webpack %}
 
     <script type="text/javascript">
     window.onload = function() {
       // Build a system
-      const ui = SwaggerUIBundle({
+      const ui = window.neighbourly.SwaggerUIBundle({
         url: {{ url|json_encode|raw }},
         validatorUrl: {{ validator_url|json_encode|raw }},
         operationsSorter: {{ operations_sorter|json_encode|raw }},
         dom_id: '#swagger-ui',
         presets: [
-          SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
+          window.neighbourly.SwaggerUIBundle.presets.apis,
+          window.neighbourly.SwaggerUIStandalonePreset
         ],
         plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
+          window.neighbourly.SwaggerUIBundle.plugins.DownloadUrl
         ],
         layout: "StandaloneLayout"
       })
